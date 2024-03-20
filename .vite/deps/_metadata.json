@@ -1,0 +1,43 @@
+{
+  "hash": "f498afd6",
+  "configHash": "6e94c06b",
+  "lockfileHash": "6a35b2a2",
+  "browserHash": "03e18bfb",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "7c41105a",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "da14f8d1",
+      "needsInterop": true
+    },
+    "swiper/element/bundle": {
+      "src": "../../node_modules/swiper/swiper-element-bundle.mjs",
+      "file": "swiper_element_bundle.js",
+      "fileHash": "6e9224f1",
+      "needsInterop": false
+    },
+    "@react-google-maps/api": {
+      "src": "../../node_modules/@react-google-maps/api/dist/esm.js",
+      "file": "@react-google-maps_api.js",
+      "fileHash": "bd606f46",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4ASWBRZ3": {
+      "file": "chunk-4ASWBRZ3.js"
+    },
+    "chunk-O6O4HUXW": {
+      "file": "chunk-O6O4HUXW.js"
+    },
+    "chunk-LQ2VYIYD": {
+      "file": "chunk-LQ2VYIYD.js"
+    }
+  }
+}
