@@ -9,7 +9,7 @@
     box-shadow: 0 0 0 0.1em rgba(7, 7, 7, 0.5);
 }
 
-.servicos{
+/* .servicos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@
     text-align: justify;
     text-decoration: none;
     color: #757779;
-}
+} */
 
 .title{
     text-align: center;
@@ -60,7 +60,7 @@
 }
 
 .slider-servicos {
-    width: 40%; 
+    max-width: 40%; 
     margin: 2em;
     overflow: hidden; 
     object-fit: cover; 
@@ -69,5 +69,10 @@
 .slider-servicos img {
     width: 100%; 
     height: 100%; 
+}
 
+@media (max-width: 768px) {
+    .slider-servicos{
+        max-width: 70%;
+    }
 }

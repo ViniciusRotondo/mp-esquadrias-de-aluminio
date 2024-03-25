@@ -31,17 +31,19 @@ h1 {
 }
 
 .logo-image {
-  max-width: 350px; /* Tamanho máximo da imagem em telas grandes */
+  max-width: 300px; /* Tamanho máximo da imagem em telas grandes */
 }
 
 @media (max-width: 768px) {
   .logo-image {
-      max-width: 150px; /* Tamanho máximo da imagem em telas médias */
+      max-width: 250px; /* Tamanho máximo da imagem em telas médias */
   }
 }
 
 @media (max-width: 576px) {
   .logo-image {
-      max-width: 100px; /* Tamanho máximo da imagem em telas pequenas */
+      max-width: 200px; /* Tamanho máximo da imagem em telas pequenas */
   }
 }
+
+

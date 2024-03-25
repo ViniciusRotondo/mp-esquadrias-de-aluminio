@@ -6,29 +6,11 @@ const QuemSomos = () => {
     <Container className="container-quem-somos">
       <Row>
         <Col md={6}> 
-          <h2>
-            Descubra como a MP Esquadria de Alumínio está redefinindo os padrões
-            de excelência e qualidade
+          <h2 className="color-red">
+            NOSSA HISTÓRIA
           </h2>
           <p>
-            A <span>MP Esquadrias de Alumínio</span> teve início em 2009 como uma modesta
-            serralheria, fundada por Pedro Fernando e seu filho, Matheus
-            Retondo. Com o passar dos anos, a empresa passou por uma
-            significativa expansão quando Thais Retondo, filha de Pedro,
-            ingressou para assumir o setor administrativo. Sua entrada foi
-            fundamental para fortalecer a estrutura organizacional e impulsionar
-            o crescimento da empresa. Desde então, a <span>MP Esquadrias de Alumínio</span>
-            consolidou-se como <span>referência no mercado</span>, destacando-se pela 
-            <span>qualidade</span> de seus produtos e serviços. Com uma equipe dedicada e
-            comprometida, oferecemos soluções em esquadrias de alumínio que
-            atendem às necessidades e expectativas dos nossos clientes. Nosso
-            <span>foco na excelência e no profissionalismo</span> nos permite entregar
-            resultados superiores em cada projeto que assumimos. Estamos
-            constantemente inovando e aprimorando nossos processos para garantir
-            a máxima satisfação dos clientes. Na <span>MP Esquadrias de Alumínio</span>,
-            valorizamos a confiança depositada em nós pelos nossos clientes e
-            estamos comprometidos em continuar oferecendo produtos e serviços da
-            mais alta qualidade.
+            Fundada por Pedro Desangiacomo em 2009, somos uma empresa familiar dedicada à fabricação de esquadrias de alumínio sob medida. Com a expertise transmitida de geração em geração, combinamos tradição e inovação para oferecer produtos de qualidade excepcional. Desde então, trabalhamos lado a lado com nossos clientes, moldando o futuro com excelência em cada projeto.
           </p>
         </Col>
         <Col md={6} className="d-none d-md-block"> 

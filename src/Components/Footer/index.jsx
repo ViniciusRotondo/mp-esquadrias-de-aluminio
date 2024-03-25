@@ -7,29 +7,27 @@ import Logo from '/LogoCompleta.png';
 const Footer = () => {
   return (
     <Container>
-      <Row className="align-items-center">
+      <Row className="align-items-center py-3">
         <Col md={3} className='logo d-none d-md-block '> 
           <Image src={Logo} alt="logotipo" fluid className="align-self-center" />
         </Col>
         <Col md={6} className="contato"> 
-          <h2>Contatos para orçamento</h2>
+          <h3>Contato</h3>
           <p>
-            (11)97409-4092
+            comercial@mpesquadriadealuminio.com.br
           </p>
-          <p>
-            (11)99984-1727
-          </p>
-          <p>
-            email@mpesquadriadealuminio.com.br
-          </p>
-          <p>Redes sociais:</p>
+          <h5>Redes sociais:</h5>
           <div className='nossas-redes'>
-            <img src={Facebook} alt="Imagem facebook" />
-            <img src={Instagram} alt="Imagem instagram" className='insta' />
+            <a target='blank' href='https://www.facebook.com/mp.esquadriadealuminio.1'>
+              <img src={Facebook} alt="Imagem facebook" />
+            </a>
+            <a target='blank' href='https://www.instagram.com/mp_esquadrias_de_aluminio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='>
+              <img src={Instagram} alt="Imagem instagram" className='insta' />
+            </a>
           </div>
         </Col>
-        <Col md={3} className="endereco"> 
-          <h2>Onde estamos</h2>
+        <Col md={3} className="endereco py-3"> 
+          <h3>Onde estamos</h3>
           <p>Av. Brasil, 1580 - Parque das Laranjeiras, Itupeva - SP, 13295-152</p>
         </Col>
       </Row>

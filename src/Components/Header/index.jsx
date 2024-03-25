@@ -55,7 +55,7 @@ const Header = () => {
                                     <Nav.Link onClick={scrollToServicos}>Nossos Serviços</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="#orcamento">Orçamento</Nav.Link>
+                                    <Nav.Link target='blank' href="https://api.whatsapp.com/send?phone=5511974094092">Solicitar orçamento</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>

@@ -29,7 +29,8 @@ import JanelasCapa from '/Janelas.jpg';
 import PortasCapa from '/Portas.jpg';
 import PortaoCapa from '/Portao.jpg';
 import { useState, useRef, useEffect  } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
 
 register();
 
@@ -39,7 +40,7 @@ const Servicos = () => {
   const sliderRef = useRef(null);
 
   const servicos = {
-    'Janelas': {
+    'Janelas em geral': {
       imagens:[
       { id: 1, image: janela1 },
       { id: 2, image: janela2 },
@@ -51,7 +52,7 @@ const Servicos = () => {
       capa: JanelasCapa
     },
 
-    'Portas': {
+    'Portas Pivoltantes': {
       imagens: [
         { id: 6, image: porta1 },
         { id: 7, image: porta2 },
@@ -63,7 +64,7 @@ const Servicos = () => {
       capa: PortasCapa
     },
 
-    'Guarda Corpo': {
+    'Portas Deslizantes': {
       imagens: [
         { id: 11, image: guardaCorpo1 },
         { id: 12, image: guardaCorpo2 },
@@ -75,7 +76,7 @@ const Servicos = () => {
       capa:GuardaCorpoCapa
     },
 
-    'Portões': {
+    'Portões em geral': {
       imagens: [
         { id: 16, image: portao1 },
         { id: 17, image: portao2 },
@@ -100,41 +101,45 @@ const Servicos = () => {
   };
 
   return (
-    <>
-      <div className="container-galeria">
+<>
+  <div className="container-galeria">
 
-        <div className="title">
-          <h1>Serviços</h1>
-        </div>
+    <div className="title">
+      <h1>Serviços</h1>
+    </div>
 
-        <div className="servicos">
-        {Object.keys(servicos).map((tipo) => (
-          <div className="servicos-detalhes" key={tipo}>
-            <img src={servicos[tipo].capa} alt={tipo} />
-            <h2>{tipo}</h2>
-            <p>{servicos[tipo].descricao}</p>
-            <Button variant="outline-danger" onClick={() => handleClick(tipo)}>Ver mais</Button>
+    <Row className="servicos">
+      {Object.keys(servicos).map((tipo) => (
+        <Col key={tipo} xs={12} sm={6} md={4} lg={3} xl={3} className="mb-4">
+          <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+            <Card style={{ flexGrow: 1 }}>
+              <Card.Img variant={tipo} src={servicos[tipo].capa} />
+              <Card.Body>
+                <Card.Title>{tipo}</Card.Title>
+                <Card.Text>{servicos[tipo].descricao}</Card.Text>
+                <Button variant="outline-danger" onClick={() => handleClick(tipo)}>Ver mais</Button>
+              </Card.Body>
+            </Card>
           </div>
-        ))}
-        </div>
-        <div className="slider-servicos" ref={sliderRef}>
-          {tipoServico && (
-            <swiper-container
-                slides-per-view={1}
-                navigation
-                pagination={{ clickable: true }}
-                loop={true}
-              >
-                {servicos[tipoServico].imagens.map((item) => (
-                  <swiper-slide key={item.id}>
-                    <img src={item.image} alt={tipoServico} />
-                  </swiper-slide>
-                ))}
-              </swiper-container>
+        </Col>
+      ))}
+    </Row>
+
+    <div className="slider-servicos" ref={sliderRef}>
+      {tipoServico && (
+        <swiper-container slides-per-view={1} navigation pagination={{ clickable: true }} loop={true}>
+          {servicos[tipoServico].imagens.map((item) => (
+            <swiper-slide key={item.id}>
+              <img src={item.image} alt={tipoServico} />
+            </swiper-slide>
+          ))}
+        </swiper-container>
       )}
-      </div>
-      </div> 
-    </>
+    </div>
+
+    <Button className="py-2 mb-3" variant="success" size="lg" target='blank' href="https://api.whatsapp.com/send?phone=5511974094092">Solicitar Orçamento</Button>
+  </div>
+</> 
   );
 };
 
