@@ -1,11 +1,11 @@
-import "./quemSomos.css";
 import LogoCompleta from "/LogoCompleta.png";
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const QuemSomos = () => {
   return (
-    <>
-      <div className="container-quem-somos">
-        <div className="texto-quem-somos">
+    <Container className="container-quem-somos">
+      <Row>
+        <Col md={6}> 
           <h2>
             Descubra como a MP Esquadria de Alumínio está redefinindo os padrões
             de excelência e qualidade
@@ -18,7 +18,7 @@ const QuemSomos = () => {
             ingressou para assumir o setor administrativo. Sua entrada foi
             fundamental para fortalecer a estrutura organizacional e impulsionar
             o crescimento da empresa. Desde então, a <span>MP Esquadrias de Alumínio</span>
-            consolidou-se como <span>referência no mercado</span>, destacando-se pela
+            consolidou-se como <span>referência no mercado</span>, destacando-se pela 
             <span>qualidade</span> de seus produtos e serviços. Com uma equipe dedicada e
             comprometida, oferecemos soluções em esquadrias de alumínio que
             atendem às necessidades e expectativas dos nossos clientes. Nosso
@@ -30,12 +30,12 @@ const QuemSomos = () => {
             estamos comprometidos em continuar oferecendo produtos e serviços da
             mais alta qualidade.
           </p>
-        </div>
-        <div className="imagem-quem-somos">
-          <img src={LogoCompleta} alt="" />
-        </div>
-      </div>
-    </>
+        </Col>
+        <Col md={6} className="d-none d-md-block"> 
+          <Image src={LogoCompleta} alt="logo" fluid />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header'
 import Carrossel from './Components/Carrossel'
 import Servicos from './Components/Servicos'

@@ -29,6 +29,7 @@ import JanelasCapa from '/Janelas.jpg';
 import PortasCapa from '/Portas.jpg';
 import PortaoCapa from '/Portao.jpg';
 import { useState, useRef, useEffect  } from "react";
+import { Button } from "react-bootstrap";
 
 register();
 
@@ -95,7 +96,7 @@ const Servicos = () => {
     // Calcular o deslocamento para centralizar o slider
     const offsetTop = (viewportHeight - sliderHeight) / 2;
     // Scroll suave para o slider com o deslocamento calculado
-    sliderRef.current.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', offsetTop });
+    sliderRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -112,7 +113,7 @@ const Servicos = () => {
             <img src={servicos[tipo].capa} alt={tipo} />
             <h2>{tipo}</h2>
             <p>{servicos[tipo].descricao}</p>
-            <button onClick={() => handleClick(tipo)}>Ver mais</button>
+            <Button variant="outline-danger" onClick={() => handleClick(tipo)}>Ver mais</Button>
           </div>
         ))}
         </div>

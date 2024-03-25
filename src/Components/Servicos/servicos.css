@@ -60,10 +60,11 @@
 }
 
 .slider-servicos {
-    width: 50%; 
+    width: 40%; 
     margin: 2em;
     overflow: hidden; 
     object-fit: cover; 
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(7, 7, 7, 0.5);
 }
 .slider-servicos img {
     width: 100%; 
