@@ -1,55 +1,15 @@
 
 .container-galeria{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background: url("/fundoServicos.png") no-repeat right top fixed;
-    margin-top: 2em;
-    box-shadow: 0 0 0 0.1em rgba(7, 7, 7, 0.5);
 }
 
-/* .servicos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+ .servicos{
     flex-wrap: wrap;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
 }
-
-.servicos-detalhes{
-    width: 20em;
-    height: 30em;
-    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(7, 7, 7, 0.5);
-    margin: 3vw;
-    background-color: white;
-    text-align: center;
-    border-radius: 0.5em;
-}
-
-.servicos img{
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
-    border-radius: 0.5em 0.5em 0 0;
-}
-
-.servicos-detalhes p{
-    padding: 1.6em 1em 2em 1em
-}
-
-.servicos-detalhes h2{
-    margin-left: 1em;
-    color: black;
-    text-align: start;
-}
-
-
-.servicos-detalhes a{
-    text-align: justify;
-    text-decoration: none;
-    color: #757779;
-} */
 
 .title{
     text-align: center;
@@ -59,20 +19,34 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.card-img-top {
+    object-fit: cover; 
+    height: 200px; 
+  }
+
+  .slider-servicos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
 .slider-servicos {
-    max-width: 40%; 
-    margin: 2em;
+    margin-top: 2em;
     overflow: hidden; 
     object-fit: cover; 
-    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(7, 7, 7, 0.5);
+    width: 40%;
+    max-width: 100%;
 }
 .slider-servicos img {
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+}
+
+.text-card{
+    color: gray;
 }
 
 @media (max-width: 768px) {
     .slider-servicos{
-        max-width: 70%;
+        width: 80%;
     }
 }

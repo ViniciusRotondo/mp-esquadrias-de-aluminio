@@ -55,6 +55,8 @@ const Carrossel = () => {
                             </swiper-slide>
                         ))}
                 </swiper-container>
+                <div className="ref-quem-somos"></div>
+                
             </div>
         </>
     )

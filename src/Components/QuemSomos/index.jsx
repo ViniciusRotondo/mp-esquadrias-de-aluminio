@@ -17,6 +17,7 @@ const QuemSomos = () => {
           <Image src={LogoCompleta} alt="logo" fluid />
         </Col>
       </Row>
+      <div className="ref-servicos"></div>
     </Container>
   );
 };
