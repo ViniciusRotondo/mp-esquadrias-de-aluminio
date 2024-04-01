@@ -8,7 +8,7 @@ import Logo from "/LogoCompleta.png";
 
 const Footer = () => {
 /*     const loader = new Loader({
-    apiKey: "AIzaSyBOSKZcVo6SjVL2b3oXps2hPFKP_2PaERs",
+    apiKey: "",
     version: "weekly",
     libraries: ["places"],
   });
